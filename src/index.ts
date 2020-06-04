@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, './views'))
 app.get('/', (_req: Request, res: Response) => {
   res.render('index', {
     title: 'Hello there',
-    message: 'Hello from pug, let us change something, or not'
+    message: 'Hello from pug, let us change something, or not, sweet'
   })
 })
 
