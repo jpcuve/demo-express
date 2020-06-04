@@ -1,7 +1,7 @@
-import { RequestHandler, Request } from "express"
+import { RequestHandler, Request, Response, NextFunction } from "express"
 import { AuthenticationRequest } from "."
 
-const authenticate: RequestHandler = (req: Request, _res, next) => {
+const authenticate: RequestHandler = (req: Request, _res: Response, next: NextFunction) => {
   const apiToken = req.headers['x-api-token']
   console.log(`API token: ${apiToken}`)
   const authReq = req as AuthenticationRequest
