@@ -18,7 +18,7 @@ router.get('/', (_req, res) => {
 })
 
 router.get('/about', (_req, res) => {
-  res.send('About router')
+  res.send('About router, now')
 })
 
 export default router
